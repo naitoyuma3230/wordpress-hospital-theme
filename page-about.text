@@ -1,0 +1,144 @@
+<?php
+/*
+Template Name:病院紹介ページ 
+*/
+?>
+
+<?php get_header() ?>
+
+<body>
+
+  <div id="container">
+    <header>
+      <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="さんぷる歯科医院"></a></h1>
+    </header>
+
+    <div id="contents">
+
+      <div id="main">
+
+        <section>
+
+          <h2>当院について</h2>
+
+          <ul class="menu">
+            <li><a href="#info1">当院について</a></li>
+            <li><a href="#info2">初診の方へ</a></li>
+            <li><a href="#info3">院長挨拶</a></li>
+          </ul>
+
+          <h3 id="info1">当院について</h3>
+          <p>病院の詳細説明ページ</p>
+
+        </section>
+
+        <section id="info2">
+
+          <h3>初診の方へ</h3>
+
+          <div class="box">
+            <img src="images/sample1.jpg" alt="" class="w40p fl">
+            <h4>診療の流れ1</h4>
+            <p>サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
+          </div>
+          <div class="c"><img src="images/arrow3.png" alt="" width="100"></div>
+
+          <div class="box">
+            <h4>診療の流れ2</h4>
+            <p>サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
+          </div>
+          <div class="c"><img src="images/arrow3.png" alt="" width="100"></div>
+
+          <div class="box">
+            <h4>診療の流れ3</h4>
+            <p>サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
+          </div>
+
+        </section>
+
+        <section>
+
+          <h2>院長挨拶</h2>
+
+          <ul class="menu">
+            <li><a href="info.html">当院について</a></li>
+            <li><a href="info1.html">初診の方へ</a></li>
+            <li class="current"><a href="info2.html">院長挨拶</a></li>
+          </ul>
+
+          <h3 id="info3">院長挨拶</h3>
+          <p><img src="images/00000933.png" alt="" class="fr w40p">院長の挨拶や経歴などをここに入れます。サンプルテキスト。院長の挨拶や経歴などをここに入れます。サンプルテキスト。院長の挨拶や経歴などをここに入れます。サンプルテキスト。院長の挨拶や経歴などをここに入れます。サンプルテキスト。院長の挨拶や経歴などをここに入れます。サンプルテキスト。院長の挨拶や経歴などをここに入れます。サンプルテキスト。</p>
+
+          <table class="ta1">
+            <caption>必要であれば経歴や実績をテーブルで表示</caption>
+            <tr>
+              <th>見出し</th>
+              <td>説明などを記入</td>
+            </tr>
+            <tr>
+              <th>見出し</th>
+              <td>説明などを記入</td>
+            </tr>
+            <tr>
+              <th>見出し</th>
+              <td>説明などを記入</td>
+            </tr>
+          </table>
+        </section>
+      </div>
+      <!--/#main-->
+
+      <div id="sub">
+        <?php include("nav.php") ?>
+        <?php include("subnav.php") ?>
+      </div>
+      <?php include("address.php") ?>
+      <!--/#sub-->
+
+    </div>
+    <!--/#contents-->
+
+    <!--上部イメージ画像-->
+    <aside class="mainimg">
+      <div class="inner">
+        <img src="images/subimg.jpg" alt="" class="slide3">
+        <img src="images/123_kazari_sub.png" alt="" classs="kazari">
+      </div>
+    </aside>
+
+  </div>
+  <!--/#container-->
+
+  <footer>
+
+    <ul id="footermenu">
+      <li><a href="#">フッターメニュー</a></li>
+      <li><a href="#">フッターメニュー</a></li>
+      <li><a href="#">フッターメニュー</a></li>
+      <li><a href="#">フッターメニュー</a></li>
+      <li><a href="#">フッターメニュー</a></li>
+      <li><a href="#">フッターメニュー</a></li>
+    </ul>
+
+    <div id="copyright">
+      <small>Copyright&copy; <a href="index.html">さんぷる歯科医院</a> All Rights Reserved.</small>
+      <span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+    </div>
+
+  </footer>
+
+  <!--ページの上部に戻る「↑」ボタン-->
+  <p class="nav-fix-pos-pagetop"><a href="#"><img src="images/pagetop.png" alt="PAGE TOP"></a></p>
+
+  <!--メニュー開閉ボタン-->
+  <div id="menubar_hdr" class="close"></div>
+  <!--メニューの開閉処理条件設定　900px以下-->
+  <script>
+    if (OCwindowWidth() <= 900) {
+      open_close("menubar_hdr", "menubar-s");
+    }
+  </script>
+
+</body>
+
+</html>
